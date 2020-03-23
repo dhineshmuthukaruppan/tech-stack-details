@@ -59,8 +59,7 @@
 
 ## Single server 2 - 9 Concurrent Users
 
-![2 - 9 Concurrent Users]  
-(/assets/img/architecture/2-9concurrent_users.png)      
+![2 - 9 Concurrent Users](../assets/img/architecture/2-9concurrent_users.png)      
 
 
 
@@ -69,16 +68,14 @@
 
 We can upgrade one server while the other keeps serving the requests. For example, take down server#1, while server#2 continues serving the request. Then bring up server#1 and take down server#2 to update it. In the end, no request will be dropped, and our application will be fully updated.
 
-![10 - 99 Concurrent Users]
-(/assets/img/architecture/10-99concurrent_users.png)     
+![10 - 99 Concurrent Users](../assets/img/architecture/10-99concurrent_users.png)     
 
 
 
 ## Horizontal Scaling 100 - 999 Concurrent users
 > Bottleneck will be on the I/O. Databases will take longer to respond. We could keep upgrading to m4.xlarge or equivalent (4CPU / 16 GB RAM). There will be a point where vertical scaling will not be cost effective. So we need to do horizontal scaling. Vertical scaling has another issue: all our eggs are in one basket. If the server goes down we'll be screwed. On the other hand, horizontal scaling will give us redundancy and failover capabilities. 
 
-![100 - 999 Concurrent Users]
-(/assets/img/architecture/vertical_vs_horizontal_scaling.png)   
+![100 - 999 Concurrent Users](../assets/img/architecture/vertical_vs_horizontal_scaling.png)   
 
 At this point, it's better to start scaling horizontally rather than vertically. The bottleneck is most likely on the database. So, we can:
 
@@ -94,8 +91,7 @@ We can improve our previous setup, as follow:
 1. Use multiple availability zones in a region (eg. us-east-1, us-west-1), which one are connected through low latency links.
 1. split static files to different server/service for easier maintenance (eg. AWS S3 and Cloud Front CDN). Add CDN for static files for optimizing cross origin performance and lower the latency. we can store the static assets such as Javascript files, css files, image files, videos and so on. to Content delivery network.
 
-![1000 - 9,999 Concurrent Users]
-(/assets/img/architecture/1000-10000concurrent_users.png)     
+![1000 - 9,999 Concurrent Users](../assets/img/architecture/1000-10000concurrent_users.png)     
 
 
 
@@ -104,8 +100,7 @@ So far, we have been leveraging vertical and horizontal scaling. We have separat
 
 It's time to take down our web app monolith and break it down into multiple smaller and independent components (microservices/SOA) that we can scale independently. We don't have to do the break down all at once. We can have the monolith keep doing what it was doing and start writing small client apps performs some of the task that the main app used to do. Later, we can use the load balancer to redirect the traffic to the new small service instead of the main app. Eventually, we can remove the code from the monolith since the new microservice has fully replaced it. Repeat this process as many times as needed to create new microservices. It should looks something like this. 
 
-![1 Million + Concurrent Users]
-(/assets/img/architecture/million_plus_users.png)    
+![1 Million + Concurrent Users](../assets/img/architecture/million_plus_users.png)    
 
 **Automate** as much as we can. we have db replicas and sharding, horizontal scaling, multiple regions and multi-AZ, autoscaling. 
 
@@ -115,7 +110,7 @@ It's time to take down our web app monolith and break it down into multiple smal
 
 
 
-#Monthly Expenses upto 100 concurrent users
+# Monthly Expenses upto 100 concurrent users  
 
 1. since we are completely using open source for our software development, we don't have to spend anything on software purchases.
 1. S3 - `$0.023` per GB / Month - very cheap
