@@ -104,13 +104,13 @@ It's time to take down our web app monolith and break it down into multiple smal
 
 **Automate** as much as we can. we have db replicas and sharding, horizontal scaling, multiple regions and multi-AZ, autoscaling. 
 
-**Highly Available, Multi-Region** At this point, to scale we just keep adding instances and spreading across availability zones and regions based on the source of the traffic. If you notice that a significan amount of traffic is coming from certain region it's the time to make our server available there. Regions doesn't provide low latesncy links between them. One way to work around this issue is sharding the database.
+**Highly Available, Multi-Region** At this point, to scale we just keep adding instances and spreading across availability zones and regions based on the source of the traffic. If you notice that a significan amount of traffic is coming from certain region it's the time to make our server available there. Regions doesn't provide low latency links between them. One way to work around this issue is sharding the database.
 
 **AutoScaling** It would be a waste if we always allocate servers for peak capacity. User traffic has peaks and valleys. It's better to put in place an autoscaling option that allows the network to adjust to the traffic conditions. There are multiple strategies to autoscale such as CPU utilization, scale based on latency or based on network traffic.
 
 
 
-# Monthly Expenses upto 100 concurrent users  
+# Monthly Expenses for the first 6 months
 
 1. since we are completely using open source for our software development, we don't have to spend anything on software purchases.
 1. S3 - `$0.023` per GB / Month - very cheap
@@ -123,12 +123,19 @@ It's time to take down our web app monolith and break it down into multiple smal
 1. Overall running cost for the first 6 months is atmost `$50` per month and after that based on number of users it will increase.   
 
 
+# References
 
+[Designing Data Intensive Applications book](https://github.com/Yang-Yanxiang/Designing-Data-Intensive-Applications/blob/master/Designing%20Data%20Intensive%20Applications.pdf)
 
+[Building Microservices book](http://ce.sharif.edu/courses/96-97/1/ce924-1/resources/root/Books/building-microservices-designing-fine-grained-systems.pdf)
 
+[Mongodb replication](https://docs.mongodb.com/manual/replication/)
 
+[Mongodb Sharding](https://docs.mongodb.com/manual/sharding/)  
 
+[Difference between sql and nosql](https://www.geeksforgeeks.org/difference-between-sql-and-nosql/)
 
+[what is node js](https://www.youtube.com/watch?v=KsjrN-T3ZCs)    
 
 
 
