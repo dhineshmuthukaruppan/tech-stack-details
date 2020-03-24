@@ -2,13 +2,11 @@
 #### Copyrights (c) 2020, www.hapevent.com, All rights reserved
 #### Author name: Dhinesh Muthukaruppan
 
-
-
 # Hapevent tech stack 
 ## Front end
 1. **React/Redux** 
-1. **HTML5 <EJS>**
-1. **CSS3 <SCSS>**
+1. **HTML5 -EJS**
+1. **CSS3 -SCSS**
 1. **Javascript**
 1. **Socket IO** Realtime webapplication | Bidirectional communication | Chatting 
 
@@ -22,6 +20,9 @@
 
 ## Testing Framework
 1. **Jest** 
+
+## Bundler
+1. **webpack**
 
 ## CI/CD
 1. **Docker** Containerization
@@ -125,6 +126,18 @@ It's time to take down our web app monolith and break it down into multiple smal
 
 # References
 
+[why would I use node js - explained in easy terms](https://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js)   
+
+[what is node js - simple explanation in layman terms](https://www.youtube.com/watch?v=KsjrN-T3ZCs)    
+
+[Difference between sql and nosql](https://www.geeksforgeeks.org/difference-between-sql-and-nosql/)
+
+[Node js vs java backend for large software development](https://da-14.com/blog/nodejs-vs-java-backend-language-large-software-development)
+
+[difference between php and node js](https://www.websoptimization.com/blog/what-is-the-difference-between-php-and-node-js/)
+
+[Concurrent Users - The art of calculation](https://blog.xceptance.com/2013/07/26/concurrent-users-the-art-of-calculation/)
+   
 [Designing Data Intensive Applications book](https://github.com/Yang-Yanxiang/Designing-Data-Intensive-Applications/blob/master/Designing%20Data%20Intensive%20Applications.pdf)
 
 [Building Microservices book](http://ce.sharif.edu/courses/96-97/1/ce924-1/resources/root/Books/building-microservices-designing-fine-grained-systems.pdf)
@@ -132,12 +145,6 @@ It's time to take down our web app monolith and break it down into multiple smal
 [Mongodb replication](https://docs.mongodb.com/manual/replication/)
 
 [Mongodb Sharding](https://docs.mongodb.com/manual/sharding/)  
-
-[Difference between sql and nosql](https://www.geeksforgeeks.org/difference-between-sql-and-nosql/)
-
-[what is node js](https://www.youtube.com/watch?v=KsjrN-T3ZCs)    
-
-
 
 
 
