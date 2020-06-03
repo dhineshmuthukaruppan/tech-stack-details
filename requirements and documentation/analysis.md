@@ -1,8 +1,8 @@
 
-#### Copyrights (c) 2020, www.hapevent.com, All rights reserved
+#### Copyrights (c) 2020, All rights reserved
 #### Author name: Dhinesh Muthukaruppan
 
-# Hapevent tech stack 
+# Tech stack   
 ## Front end
 1. **React/Redux** 
 1. **HTML5 -EJS**
@@ -121,7 +121,6 @@ It's time to take down our web app monolith and break it down into multiple smal
 1. 2% commision for payment providers on successful transaction.
 1. `$0` for the first 62000 emails per month, and \$0.10 for every 1000 emails we send after that. Plus `$0.12` for each GB of attachments we send. 
 1. transactional and promotional sms to mobile phone | @ 10-12 paisa / sms. 
-1. Overall running cost for the first 6 months is atmost `$50` per month and after that based on number of users it will increase.   
 
 
 # References
