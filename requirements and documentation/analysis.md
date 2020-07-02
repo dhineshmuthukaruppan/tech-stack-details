@@ -110,7 +110,7 @@ It's time to take down our web app monolith and break it down into multiple smal
 **AutoScaling** It would be a waste if we always allocate servers for peak capacity. User traffic has peaks and valleys. It's better to put in place an autoscaling option that allows the network to adjust to the traffic conditions. There are multiple strategies to autoscale such as CPU utilization, scale based on latency or based on network traffic.
 
 
-
+<!--
 # Monthly Expenses for the first 6 months
 
 1. since we are completely using open source for our software development, we don't have to spend anything on software purchases.
@@ -121,7 +121,7 @@ It's time to take down our web app monolith and break it down into multiple smal
 1. 2% commision for payment providers on successful transaction.
 1. `$0` for the first 62000 emails per month, and \$0.10 for every 1000 emails we send after that. Plus `$0.12` for each GB of attachments we send. 
 1. transactional and promotional sms to mobile phone | @ 10-12 paisa / sms. 
-
+-->
 
 # References
 
