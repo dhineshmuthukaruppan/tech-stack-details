@@ -16,7 +16,6 @@
 1. **MongoDB** Database
 1. **Redis** as a Caching server
 1. **Nginx** as a Reverse Proxy Server and Load balancer
-1. **Kafka** message queue | Interprocess communication
 
 ## Testing Framework
 1. **Jest** 
@@ -28,7 +27,7 @@
 1. **Docker** Containerization
 1. **Kubernetes** Container Orchestration
 1. **Git** Version Control
-1. **Jenkins** Continuous Integration and continuous Delivery
+1. **Travis CI** Continuous Integration
 
 ## Hosting  
 1. **AWS** Amazon Web Service
@@ -115,13 +114,13 @@ It's time to take down our web app monolith and break it down into multiple smal
 
 1. since we are completely using open source for our software development, we don't have to spend anything on software purchases.
 1. S3 - `$0.023` per GB / Month - very cheap
-1. workmail - \$4 per mail account / month eg. abhigyan@hapevent.com
+1. workmail - \$4 per mail account / month eg. viper@dhinesh.com
 1. **t2.medium** EC2 instance - (2 cpu/ 4GiB memory) - `$0.0464` per hour - `$33` per month 
 1. upto 10 concurrent users **t2.micro** EC2 instance is enough which costs around `$0.0116` per hour - `8$` per month 
 1. 2% commision for payment providers on successful transaction.
 1. `$0` for the first 62000 emails per month, and \$0.10 for every 1000 emails we send after that. Plus `$0.12` for each GB of attachments we send. 
 1. transactional and promotional sms to mobile phone | @ 10-12 paisa / sms. 
--->
+
 
 # References
 
@@ -145,7 +144,7 @@ It's time to take down our web app monolith and break it down into multiple smal
 
 [Mongodb Sharding](https://docs.mongodb.com/manual/sharding/)  
 
-
+-->
 
 
 
